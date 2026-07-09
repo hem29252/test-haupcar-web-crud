@@ -2,8 +2,8 @@
 
 This repository contains two applications:
 
-* **Haupcar Web Frontend**
-* **Haupcar API**
+- **Haupcar Web Frontend**
+- **Haupcar API**
 
 ---
 
@@ -13,14 +13,14 @@ This repository contains two applications:
 
 Before getting started, make sure you have the following installed:
 
-* Node.js
+- Node.js
 
 ## Environment Variables
 
 Create a `.env` file in the project root and add the following:
 
 ```env
-HAUPCAR_API_BASE_URL=
+VITE_HAUPCAR_API_BASE_URL=
 ```
 
 ## Installation
@@ -45,6 +45,12 @@ yarn dev
 yarn start
 ```
 
+### The application is running:
+
+```text
+http://localhost:5173
+```
+
 ---
 
 # Haupcar API
@@ -53,8 +59,8 @@ yarn start
 
 Before getting started, make sure you have the following installed:
 
-* Node.js
-* PostgreSQL
+- Node.js
+- PostgreSQL
 
 ## Environment Variables
 
@@ -85,6 +91,14 @@ Before starting the API for the first time (or after new migrations have been ad
 yarn migrate:up
 ```
 
+## Seed Sample Data (Optional)
+
+To populate the database with mock data for development and testing, run:
+
+```bash
+yarn seed
+```
+
 ## Run the Application
 
 ### Development
@@ -97,4 +111,10 @@ yarn dev
 
 ```bash
 yarn start
+```
+
+### The application is running:
+
+```text
+http://localhost:3000
 ```
