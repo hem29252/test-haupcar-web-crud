@@ -30,5 +30,5 @@ app.use("/api/v1", carController);
 app.use(httpErrorMiddleware);
 
 app.listen(3000, () => {
-  console.log("Server running http//:localhost:3000");
+  console.log("Server is running http//:localhost:3000");
 });
