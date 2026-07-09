@@ -1,0 +1,18 @@
+exports.API_STATUS = {
+  SUCCESS: {
+    MESSAGE: "SUCCESS",
+    CODE: 200,
+  },
+  BAD_REQUEST: {
+    MESSAGE: "BAD_REQUEST",
+    CODE: 400,
+  },
+  NOT_FOUND: {
+    MESSAGE: "NOT_FOUND",
+    CODE: 404,
+  },
+  INTERNAL_SERVER_ERROR: {
+    MESSAGE: "INTERNAL_SERVER_ERROR",
+    CODE: 500,
+  },
+};
