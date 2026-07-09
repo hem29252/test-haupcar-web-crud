@@ -1,6 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
-import { routes } from "./constants/routes";
+import { ConfigProvider } from "antd";
+import { routes } from "./config/routes";
 
 export default function App() {
-  return <RouterProvider router={createBrowserRouter(routes)} />;
+  return (
+    <ConfigProvider>
+      <RouterProvider router={createBrowserRouter(routes)} />
+    </ConfigProvider>
+  );
 }

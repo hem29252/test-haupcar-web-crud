@@ -15,6 +15,18 @@ export const routes: RouteObject[] = [
         path: "/",
         Component: Pages.HomePage,
       },
+      {
+        path: "/car",
+        Component: Pages.CarListPage,
+      },
+      {
+        path: "/car/add",
+        Component: Pages.CarAddPage,
+      },
+      {
+        path: "/car/edit/:carId",
+        Component: Pages.CarEditPage,
+      },
     ],
   },
 ];
